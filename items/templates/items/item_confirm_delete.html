@@ -1,6 +1,11 @@
-<h1>Are you sure you want to delete {{ item.name }}?</h1>
-<form method="post">
-    {% csrf_token %}
-    <button type="submit">Yes, delete</button>
-</form>
-<a href="{% url 'item_list' %}">Cancel</a>
+<!-- items/templates/items/item_confirm_delete.html -->
+{% extends 'items/base.html' %}
+
+{% block content %}
+    <h1 class="text-center">Are you sure you want to delete {{ item.name }}?</h1>
+    <form method="post" class="mt-4">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Yes, delete</button>
+        <a href="{% url 'item_list' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+{% endblock %}
