@@ -73,10 +73,6 @@ table {
     border-radius: 10px; /* Curved edges */
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow */
-    width: 100%;
-    border-radius: 8px;
-    
-    /* Ensures no content spills outside the rounded corners */
 }
 
 .table th, .table td {
@@ -85,7 +81,6 @@ table {
 }
 
 th, td {
-    
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
@@ -100,7 +95,6 @@ th {
 tr:hover {
     background-color: #f1f1f1;
 }
-
 
 /* Buttons Styling */
 button {
@@ -134,10 +128,11 @@ footer {
     bottom: 0;
 }
 
+/* Headings */
 .item-list-heading {
     font-size: 80px; /* Larger font size */
     font-weight: 300; /* Thin font weight */
-    color:#284f69; /* Dark color for emphasis */
+    color: #284f69; /* Dark color for emphasis */
     text-align: center; /* Centers the text horizontally */
     width: 100%; /* Ensures the heading takes full width */
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow with a larger blur */
@@ -160,7 +155,7 @@ footer {
     position: fixed;
     top: 50%;               /* Position it vertically in the center */
     left: 50%;              /* Position it horizontally in the center */
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center; /* Horizontally centers the form */
     align-items: center; /* Vertically centers the form */
@@ -236,6 +231,8 @@ footer {
 }
 
 
+
+/* Delete Form */
 .form-container-delete {
     position: fixed;
     top: 50%;               /* Position it vertically in the center */
@@ -249,6 +246,7 @@ footer {
     text-align: center;
 }
 
+/* Item Description Container */
 .item-description-container {
     border: 2px solid transparent; /* Invisible border */
     padding: 15px;
@@ -263,6 +261,7 @@ footer {
     color: #555;
 }
 
+/* Button Container */
 .button-container {
     display: flex;
     justify-content: space-between;
@@ -274,36 +273,51 @@ footer {
     width: 48%; /* Makes buttons long */
 }
 
-.btn-lg-a {
+/* Custom Button Styling */
+.btn-lg-a, .btn-lg-b, .btn-custom {
     width: 100%;
-    background-color: #3498db;
-    color: white;
     padding: 12px;
     font-size: 16px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+.btn-lg-a {
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+
 }
 
 .btn-lg-b {
-    width: 100%;
     background-color: #bdc3c7;
     color: white;
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
     text-decoration: none;
 }
 
-
 .btn-lg-b:hover {
     background-color: #95a5a6;
+    text-decoration: none;
+
 }
 
+.btn-custom {
+    background-color: #4CAF50;  /* Change this to your desired color */
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    font-weight: 100;
+    text-decoration: none; /* Optional: rounded corners */
+}
+
+.btn-custom:hover {
+    background-color: #45a049;  /* Darker shade on hover */
+}
+
+
+/* Action Buttons Styling */
 .action-buttons .action-btn {
     border: 2px solid transparent;  /* Invisible border to start */
     padding: 5px 10px;
@@ -311,7 +325,6 @@ footer {
     transition: all 0.3s ease-in-out;  /* Smooth transition for hover effect */
 }
 
-/* Styling for Edit Button (Grey) */
 .action-buttons .btn-grey {
     background-color: #bdc3c7;  /* Grey background color */
     color: white;
@@ -324,36 +337,18 @@ footer {
     border-color: #5a6268;  /* Match border with background */
 }
 
-/* Styling for Delete Button (Red) */
-.action-buttons .btn-danger {
+.action-buttons .btn-red {
     background-color: #dc3545;  /* Red background color */
     color: white;
     font-size: 13px;
     text-decoration: none;
 }
 
-.action-buttons .btn-danger:hover {
+.action-buttons .btn-red:hover {
     background-color: #c82333;  /* Darker red on hover */
     border-color: #c82333;  /* Match border with background */
 }
 
-/* Add some spacing between the buttons */
 .action-buttons .action-btn + .action-btn {
     margin-left: 10px;
-}
-
-.btn-custom {
-    background-color: #4CAF50;  /* Change this to your desired color */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 13px;
-    border-radius: 5px; 
-    font-weight: 100;
-    text-decoration: none; /* Optional: rounded corners */
-}
-
-.btn-custom:hover {
-    background-color: #45a049;  /* Darker shade on hover */
-    text-decoration: none;
 }
