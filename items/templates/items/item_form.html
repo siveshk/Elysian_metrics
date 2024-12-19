@@ -1,20 +1,24 @@
-<!-- items/templates/items/item_form.html -->
 {% extends 'items/base.html' %}
 
-
 {% block content %}
-    <h1 class="text-center">{{ form.instance.id|default:"Create Item" }}</h1>
-    <form method="post" class="mt-4">
-        {% csrf_token %}
-        <div class="form-group">
-            <label for="id_name">Name</label>
-            {{ form.name }}
-        </div>
-        <div class="form-group">
-            <label for="id_description">Description</label>
-            {{ form.description }}
-        </div>
-        <button type="submit" class="btn btn-primary">Save</button>
-        <a href="{% url 'item_list' %}" class="btn btn-secondary">Back</a>
-    </form>
+    <div class="form-container">
+        <h1 class="text-center">{{ form.instance.id|default:"Add a New Item" }}</h1>
+        <form method="post" class="mt-4">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="id_name">Name</label>
+                {{ form.name }}
+            </div>
+            <div class="form-group">
+                <label for="id_description">Description</label>
+                {{ form.description }}
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+            <div class="form-group">
+                <a href="{% url 'item_list' %}" class="btn btn-secondary">Back</a>
+            </div>
+        </form>
+    </div>
 {% endblock %}

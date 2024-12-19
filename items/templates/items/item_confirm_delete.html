@@ -1,11 +1,24 @@
-<!-- items/templates/items/item_confirm_delete.html -->
 {% extends 'items/base.html' %}
 
 {% block content %}
-    <h1 class="text-center">Are you sure you want to delete {{ item.name }}?</h1>
-    <form method="post" class="mt-4">
+<div class="form-container-delete">
+    <form method="post">
         {% csrf_token %}
-        <button type="submit" class="btn btn-danger">Yes, delete</button>
-        <a href="{% url 'item_list' %}" class="btn btn-secondary">Cancel</a>
+        
+        <!-- Title Section -->
+        <h1 class="text-center">Are you sure you want to delete {{ item.name }}?</h1>
+        
+        <!-- Description Section with Invisible Border and Shadow on Top -->
+        <div class="item-description-container">
+            <p>{{ item.description }}</p>
+        </div>
+
+        <!-- Long Delete and Cancel Buttons -->
+        <div class="button-container">
+            <button type="submit" class="btn btn-danger btn-lg-a">Yes</button>
+            <a href="{% url 'item_list' %}" class="btn btn-secondary btn-lg-b">Cancel</a>
+        </div>
     </form>
+</div>
 {% endblock %}
+
