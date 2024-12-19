@@ -8,4 +8,3 @@ urlpatterns = [
     path('<int:pk>/delete/', views.item_delete, name='item_delete'),
 ]
 
-

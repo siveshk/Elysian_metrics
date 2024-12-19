@@ -72,13 +72,24 @@ table {
     margin-top: 20px;
     border-radius: 10px; /* Curved edges */
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    width: 100%;
+    border-radius: 8px;
+    
     /* Ensures no content spills outside the rounded corners */
 }
 
+.table th, .table td {
+    text-align: center;  /* Center align text horizontally */
+    vertical-align: middle;  /* Vertically align content in the middle */
+}
+
 th, td {
+    
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    font-weight: 100;
 }
 
 th {
@@ -124,9 +135,9 @@ footer {
 }
 
 .item-list-heading {
-    font-size: 100px; /* Larger font size */
+    font-size: 80px; /* Larger font size */
     font-weight: 300; /* Thin font weight */
-    color:#2980b9; /* Dark color for emphasis */
+    color:#284f69; /* Dark color for emphasis */
     text-align: center; /* Centers the text horizontally */
     width: 100%; /* Ensures the heading takes full width */
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow with a larger blur */
@@ -243,7 +254,7 @@ footer {
     padding: 15px;
     border-radius: 8px;
     background-color: #f9f9f9;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Shadow on top */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4); /* Shadow on top */
     margin-bottom: 20px;
 }
 
@@ -285,9 +296,64 @@ footer {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 
 .btn-lg-b:hover {
     background-color: #95a5a6;
+}
+
+.action-buttons .action-btn {
+    border: 2px solid transparent;  /* Invisible border to start */
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;  /* Smooth transition for hover effect */
+}
+
+/* Styling for Edit Button (Grey) */
+.action-buttons .btn-grey {
+    background-color: #bdc3c7;  /* Grey background color */
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.action-buttons .btn-grey:hover {
+    background-color: #5a6268;  /* Darker grey on hover */
+    border-color: #5a6268;  /* Match border with background */
+}
+
+/* Styling for Delete Button (Red) */
+.action-buttons .btn-danger {
+    background-color: #dc3545;  /* Red background color */
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.action-buttons .btn-danger:hover {
+    background-color: #c82333;  /* Darker red on hover */
+    border-color: #c82333;  /* Match border with background */
+}
+
+/* Add some spacing between the buttons */
+.action-buttons .action-btn + .action-btn {
+    margin-left: 10px;
+}
+
+.btn-custom {
+    background-color: #4CAF50;  /* Change this to your desired color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-radius: 5px; 
+    font-weight: 100;
+    text-decoration: none; /* Optional: rounded corners */
+}
+
+.btn-custom:hover {
+    background-color: #45a049;  /* Darker shade on hover */
+    text-decoration: none;
 }

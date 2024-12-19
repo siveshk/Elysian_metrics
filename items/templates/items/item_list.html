@@ -5,9 +5,9 @@
     <h1 class="item-list-heading">CRUD Application</h1>
     <h2 class="item-list-heading_2">Elysian Metrics</h2>
     <div class="d-flex justify-content-between w-100" style="max-width: 800px;">
-        <a href="{% url 'item_create' %}" class="btn btn-primary">Add New Item</a>
+        <a href="{% url 'item_create' %}" class="btn btn-custom">Add New Item</a>
     </div>
-    <table>
+    <table class="table table-bordered">
         <thead>
             <tr>
                 <th>#</th>
@@ -22,9 +22,9 @@
                     <td>{{ forloop.counter }}</td>  <!-- This gives dynamic numbering -->
                     <td>{{ item.name }}</td>
                     <td>{{ item.description }}</td>
-                    <td>
-                        <a href="{% url 'item_update' item.pk %}" class="btn btn-warning btn-sm">Edit</a>
-                        <a href="{% url 'item_delete' item.pk %}" class="btn btn-danger btn-sm">Delete</a>
+                    <td class="action-buttons">
+                        <a href="{% url 'item_update' item.pk %}" class="btn btn-grey btn-sm action-btn">Edit</a>
+                        <a href="{% url 'item_delete' item.pk %}" class="btn btn-danger btn-sm action-btn">Delete</a>
                     </td>
                 </tr>
             {% endfor %}
