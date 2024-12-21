@@ -1,4 +1,3 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -61,23 +60,23 @@ h1.text-center {
     font-size: 36px;
     margin-bottom: 20px;
     color: #34495e;
-    font-weight: 300; /* Thin font weight */
+    font-weight: 300; 
 }
 
 /* Table Styling */
 table {
     width: 100%;
-    border-collapse: separate; /* Makes border-radius work */
-    border-spacing: 0; /* Ensures there are no spaces between cells */
+    border-collapse: separate; 
+    border-spacing: 0; 
     margin-top: 20px;
-    border-radius: 10px; /* Curved edges */
+    border-radius: 10px; 
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .table th, .table td {
-    text-align: center;  /* Center align text horizontally */
-    vertical-align: middle;  /* Vertically align content in the middle */
+    text-align: center;  
+    vertical-align: middle;  
 }
 
 th, td {
@@ -130,48 +129,48 @@ footer {
 
 /* Headings */
 .item-list-heading {
-    font-size: 80px; /* Larger font size */
-    font-weight: 300; /* Thin font weight */
-    color: #284f69; /* Dark color for emphasis */
-    text-align: center; /* Centers the text horizontally */
-    width: 100%; /* Ensures the heading takes full width */
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow with a larger blur */
-    margin-bottom: -15px; /* Reduces the space below the first heading */
+    font-size: 80px; 
+    font-weight: 300; 
+    color: #284f69; 
+    text-align: center; 
+    width: 100%; 
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    margin-bottom: -15px; 
 }
 
 .item-list-heading_2 {
-    font-size: 25px; /* Larger font size */
-    font-weight: 300; /* Thin font weight */
-    color: #2c3e50; /* Dark color for emphasis */
-    text-align: center; /* Centers the text horizontally */
-    width: 100%; /* Ensures the heading takes full width */
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);/* Stronger shadow with a larger blur */
+    font-size: 25px; 
+    font-weight: 300; 
+    color: #2c3e50;
+    text-align: center; 
+    width: 100%; 
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin-top: 0;
-    margin-bottom: 20px; /* Removes any margin at the top of the second heading */
+    margin-bottom: 20px; 
 }
 
 /* Centering the form container */
 .form-container {
     position: fixed;
-    top: 50%;               /* Position it vertically in the center */
-    left: 50%;              /* Position it horizontally in the center */
+    top: 50%;              
+    left: 50%;             
     transform: translate(-50%, -50%);
     display: flex;
-    justify-content: center; /* Horizontally centers the form */
-    align-items: center; /* Vertically centers the form */
-    min-height: 100vh; /* Makes sure the container takes full height of the screen */
-    flex-direction: column; /* Stacks elements vertically */
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    flex-direction: column; 
     padding: 20px;
 }
 
 /* Form Styling */
 .form-container form {
     width: 100%;
-    max-width: 600px; /* Sets the maximum width for the form */
+    max-width: 600px; 
     padding: 30px;
     background-color: #fff;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Form Label Styling */
@@ -235,8 +234,8 @@ footer {
 /* Delete Form */
 .form-container-delete {
     position: fixed;
-    top: 50%;               /* Position it vertically in the center */
-    left: 50%;              /* Position it horizontally in the center */
+    top: 50%;               
+    left: 50%;            
     transform: translate(-50%, -50%); 
     display: flex;
     padding: 20px;
@@ -248,11 +247,11 @@ footer {
 
 /* Item Description Container */
 .item-description-container {
-    border: 2px solid transparent; /* Invisible border */
+    border: 2px solid transparent; 
     padding: 15px;
     border-radius: 8px;
     background-color: #f9f9f9;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4); /* Shadow on top */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
     margin-bottom: 20px;
 }
 
@@ -270,7 +269,7 @@ footer {
 }
 
 .btn {
-    width: 48%; /* Makes buttons long */
+    width: 48%; 
 }
 
 /* Custom Button Styling */
@@ -304,49 +303,49 @@ footer {
 }
 
 .btn-custom {
-    background-color: #4CAF50;  /* Change this to your desired color */
+    background-color: #4CAF50;  
     color: white;
     font-size: 13px;
     border-radius: 5px;
     font-weight: 100;
-    text-decoration: none; /* Optional: rounded corners */
+    text-decoration: none;
 }
 
 .btn-custom:hover {
-    background-color: #45a049;  /* Darker shade on hover */
+    background-color: #45a049; 
 }
 
 
 /* Action Buttons Styling */
 .action-buttons .action-btn {
-    border: 2px solid transparent;  /* Invisible border to start */
+    border: 2px solid transparent; 
     padding: 5px 10px;
     border-radius: 4px;
-    transition: all 0.3s ease-in-out;  /* Smooth transition for hover effect */
+    transition: all 0.3s ease-in-out; 
 }
 
 .action-buttons .btn-grey {
-    background-color: #bdc3c7;  /* Grey background color */
+    background-color: #bdc3c7; 
     color: white;
     font-size: 13px;
     text-decoration: none;
 }
 
 .action-buttons .btn-grey:hover {
-    background-color: #5a6268;  /* Darker grey on hover */
-    border-color: #5a6268;  /* Match border with background */
+    background-color: #5a6268; 
+    border-color: #5a6268; 
 }
 
 .action-buttons .btn-red {
-    background-color: #dc3545;  /* Red background color */
+    background-color: #dc3545; 
     color: white;
     font-size: 13px;
     text-decoration: none;
 }
 
 .action-buttons .btn-red:hover {
-    background-color: #c82333;  /* Darker red on hover */
-    border-color: #c82333;  /* Match border with background */
+    background-color: #c82333;  
+    border-color: #c82333;  
 }
 
 .action-buttons .action-btn + .action-btn {

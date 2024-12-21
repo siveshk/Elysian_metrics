@@ -53,14 +53,19 @@ Make sure you have the following installed:
 ```bash
 git clone https://github.com/siveshk/Elysian_metrics.git
 ```
+2. **Install dependencies:**
 
-2. **Run the application:**
+```bash
+pip install -r requirements.txt
+```
+
+3. **Run the application:**
 
 ``` bash
 python manage.py runserver
 ```
 
-3. **Access the application:**
+4. **Access the application:**
 
 Open your browser and navigate to http://localhost:8000.
 
